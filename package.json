@@ -22,7 +22,7 @@
     "test-all": "npm run test4 && npm run test6 && npm run test7",
     "coverage": "istanbul cover -x 'build/**' _mocha -- --compilers coffee:coffee-script/register -R spec test/lib",
     "publish-coverage": "npm run coverage && cat coverage/lcov.info | coveralls",
-    "coverage-lcov": "istanbul cover -x 'build/**' _mocha -- --compilers coffee:coffee-script/register --report lcovonly -R spec test/lib",
+    "coverage-lcov": "istanbul cover -x 'build/**' _mocha --report lcovonly -- --compilers coffee:coffee-script/register --require ./build/coverage.js -R spec test/",
     "coverage-clean": "rm -rf ./coverage",
     "perf": "coffee benchmark/index.coffee --nodejs '--turbo'"
   },
