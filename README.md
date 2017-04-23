@@ -6,9 +6,21 @@
 
 Quickly flatten an array in-place.
 
-View [many implementation variations](https://github.com/elidoran/array-flatten/tree/add-more/benchmark/code/flatten) and use it to run benchmarks. This implementation is named `inplace2.js` there.
+Fastest implementation when compared to several published packages and many unpublished variations.
 
-Run `npm run perf` to compare the performance of this implementation to both [array-flatten](https://www.npmjs.com/package/array-flatten) and [flatten-array](https://www.npmjs.com/package/flatten-array).
+View [many implementation variations](https://github.com/elidoran/array-flatten/tree/add-more/benchmark/code/flatten) and use it to run benchmarks. This package's implementation is named `inplace2.js` there.
+
+For this repo, run `npm run perf` to compare the performance of this implementation to:
+
+1. [arr-flatten](https://www.npmjs.com/package/arr-flatten)
+2. [array-flatten](https://www.npmjs.com/package/array-flatten)
+3. [compute-flatten](https://www.npmjs.com/package/compute-flatten)
+4. [flatten-array](https://www.npmjs.com/package/flatten-array)
+5. [flatten](https://www.npmjs.com/package/flatten)
+6. [just-flatten-it](https://www.npmjs.com/package/just-flatten-it)
+7. [reduce-flatten](https://www.npmjs.com/package/reduce-flatten).
+
+See screenshot of [performance results](#screenshot) below.
 
 
 ## Install
@@ -59,6 +71,9 @@ buildSomething([ // top-most array is a great target
   makeSomeMore()
 ])
 ```
+
+
+### Screenshot
 
 Performance results screenshot shows this implementation is significantly faster than the other two:
 
