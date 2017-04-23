@@ -1,0 +1,51 @@
+{
+  "name": "@flatten/array",
+  "version": "1.0.0",
+  "description": "Quickly flatten an array in-place.",
+  "main": "lib/index.js",
+  "files": [
+    "lib/index.js"
+  ],
+  "keywords": [
+    "flatten",
+    "flatten array",
+    "array"
+  ],
+  "author": "Eli Doran <eli+npm@elidoran.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint --no-eslintrc --config build/eslint/eslint.js lib/index.js",
+    "test": "_mocha --compilers coffee:coffee-script/register -R spec --bail --check-leaks test/lib",
+    "test4": "nave use 4.8 npm test",
+    "test6": "nave use 6.10 npm test",
+    "test7": "nave use 7.9 npm test",
+    "test-all": "npm run test4 && npm run test6 && npm run test7",
+    "coverage": "istanbul cover -x 'build/**' _mocha -- --compilers coffee:coffee-script/register -R spec test/lib",
+    "publish-coverage": "npm run coverage && cat coverage/lcov.info | coveralls",
+    "coverage-lcov": "istanbul cover -x 'build/**' _mocha -- --compilers coffee:coffee-script/register --report lcovonly -R spec test/lib",
+    "coverage-clean": "rm -rf ./coverage",
+    "perf": "coffee benchmark/index.coffee --nodejs '--turbo'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/elidoran/flatten-array.git"
+  },
+  "bugs": "http://github.com/elidoran/flatten-array/issues",
+  "devDependencies": {
+    "@optimal/fn": "^0.1.0",
+    "array-flatten": "^2.1.1",
+    "benchmarked": "^1.0.0",
+    "coffee-script": "^1.12.5",
+    "coveralls": "^2.13.0",
+    "eslint": "^3.19.0",
+    "flatten-array": "^1.0.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0",
+    "mocha-lcov-reporter": "^1.3.0",
+    "nave": "^2.2.3"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=4"
+  }
+}
