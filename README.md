@@ -52,7 +52,7 @@ flatten(array)
 
 ### **tl;dr** This is the fastest flatten implementation.
 
-An in-place flatten on the top-most array is significantly faster than producing a new array with the flattened results. Run this project's performance test to see it compared to both [array-flatten](https://www.npmjs.com/package/array-flatten) and [flatten-array](https://www.npmjs.com/package/flatten-array).
+An in-place flatten on the top-most array is significantly faster than producing a new array with the flattened results. Run this project's performance test to see it compared to the implementations listed above.
 
 Also, use [my fork](https://github.com/elidoran/array-flatten/tree/add-more/benchmark/code/flatten) of the `array-flatten` project to compare this implementation, called `inplace2.js` there, against many other implementations.
 
