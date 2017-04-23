@@ -14,7 +14,7 @@ Run `npm run perf` to compare the performance of this implementation to both [ar
 ## Install
 
 ```sh
-    npm install @flatten/array --save
+npm install @flatten/array --save
 ```
 
 
