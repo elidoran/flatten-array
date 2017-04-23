@@ -44,7 +44,7 @@ An in-place flatten on the top-most array is significantly faster than producing
 
 Also, use [my fork](https://github.com/elidoran/array-flatten/tree/add-more/benchmark/code/flatten) of the `array-flatten` project to compare this implementation, called `inplace2.js` there, against many other implementations.
 
-Normally it's an anti-pattern to alter a provided array unless it is the specific intent (such as a sort utility). In this case, it is both the specific intent, the fastest implementation, and it fits the common use pattern.
+Normally it's an anti-pattern to alter a provided array unless it is the specific intent (such as a sort utility). In this case, it is the specific intent, the fastest implementation, and the common use pattern.
 
 The third reason, "common use pattern", means it's common to create a new array which contains many other things which may, or may not, be arrays. Then, that top-most array is provided to `@flatten/array`. So, it's a brand new array created to contain the results and is therefore a perfect candidate to mutate to hold the final results.
 
