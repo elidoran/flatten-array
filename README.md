@@ -60,7 +60,7 @@ buildSomething([ // top-most array is a great target
 ])
 ```
 
-Performance results:
+Performance results screenshot shows this implementation is significantly faster than the other two:
 
 ![Show performance comparison with various inputs for this implementation, array-flatten, and flatten-array.](docs/performance.png)
 
