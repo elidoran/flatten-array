@@ -4,9 +4,11 @@
 [![npm version](https://badge.fury.io/js/%40flatten%2Farray.svg)](http://badge.fury.io/js/%40flatten%2Farray)
 [![Coverage Status](https://coveralls.io/repos/github/elidoran/flatten-array/badge.svg?branch=master)](https://coveralls.io/github/elidoran/flatten-array?branch=master)
 
-Quickly flatten an array in-place.
+Fastest array flatten.
 
-Fastest implementation when compared to several published packages and many unpublished variations.
+Fastest implementation compared to several published packages and many unpublished variations.
+
+The outermost array (the one provided to `flatten()`) is mutated. If you want to preserve the outermost array as well (inner arrays are always preserved) then wrap it in an array when supplying it: `flatten([array])`. Then the new array is the one which will be changed. And, the flatten operation will still be far faster than the other implementations.
 
 View [many implementation variations](https://github.com/elidoran/array-flatten/tree/add-more/benchmark/code/flatten) and use it to run benchmarks. This package's implementation is named `inplace2.js` there.
 
@@ -45,6 +47,25 @@ flatten(array)
 // no need to assign array to it.
 // but, you can, if you want to because it returns it
 // to allow inline use.
+
+// want to preserve your array? wrap it:
+var dontChangeThisArray = getSomeArray()
+// wrap it in an array when passing it.
+// this is still much faster than other implementations.
+flatten( [ dontChangeThisArray ] )
+```
+
+
+## Don't Change My Array!
+
+No problem. Wrap your array and you're all set.
+
+And, it's still faster than the other implementations.
+
+```javascript
+array = getSomeArray()
+flatten( [ array ] )
+// NOTE: extra spaces added for emphasis
 ```
 
 
@@ -67,6 +88,7 @@ buildSomething([ // top-most array is a great target
   // all these may or may not provide arrays
   require('some-plugin'),
   require('./local-addons'),
+  [], // they can return empty arrays, too
   [ 'something', 'defined', 'here' ]
   makeSomeMore()
 ])
@@ -75,7 +97,7 @@ buildSomething([ // top-most array is a great target
 
 ### Screenshot
 
-Performance results screenshot shows this implementation is significantly faster than the other two:
+Performance results screenshot shows this implementation is significantly faster than the others:
 
 ![Show performance comparison with various inputs for this implementation, array-flatten, and flatten-array.](docs/performance.png)
 
