@@ -32,7 +32,7 @@ ask.question 'Begin benchmark? (y/N)  ', (answer) ->
         "#{name} #{dim 'x'} #{ops} #{grey 'ops/sec'} #{rme} #{grey '('}#{size} #{runs}"
 
       # convert this implementation's file name to its real name.
-      renameKey: (file) -> if file.stem is 'this_library' then '@flatten/array' else file.stem
+      renameKey: (file) -> if file.stem is '_this_library' then '@flatten/array' else file.stem
     }).run()
 
   else console.log 'quitting'
