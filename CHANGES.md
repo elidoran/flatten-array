@@ -1,3 +1,8 @@
+## 1.1.1 - 2017/04/30
+
+1. remembered to update the performance screenshot
+2. changed package description to match the README's one-liner
+
 ## 1.1.0 - 2017/04/30
 
 1. update README with more explicit instructions to wrap an array to preserve it
