@@ -1,3 +1,15 @@
+## 1.1.0 - 2017/04/30
+
+1. update README with more explicit instructions to wrap an array to preserve it
+2. update README to mention empty arrays are okay
+3. add benchmark input with empty array
+4. add test with empty inner arrays
+5. update to handle empty inner arrays
+6. add test to ensure inner arrays are preserved (unchanged)
+7. update to remove the `(i, 1)` values prepended on the inner arrays via `splice()`
+8. rename benchmark input for this library so it's sorted first, again
+
+
 ## 1.0.1 - 2017/04/23
 
 1. add more implementations to compare to
