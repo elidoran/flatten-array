@@ -1,3 +1,7 @@
+## 1.1.3 - 2017/05/31
+
+1. doh. forgot to add two new benchmark comparison implementations to the README list.
+
 ## 1.1.2 - 2017/05/31
 
 1. switch benchmark script to JS
