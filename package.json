@@ -46,6 +46,7 @@
     "eslint": "^3.19.0",
     "flatten": "^1.0.2",
     "flatten-array": "^1.0.0",
+    "has-flag": "^2.0.0",
     "istanbul": "^0.4.5",
     "just-flatten-it": "^1.1.23",
     "mocha": "^3.2.0",
