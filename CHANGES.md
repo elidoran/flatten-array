@@ -1,3 +1,12 @@
+## 1.1.2 - 2017/05/31
+
+1. switch benchmark script to JS
+2. add two more implementations to the benchmark for comparison
+3. rerun benchmark with 2 more implementations and update screenshot of results
+4. add node 8 to Travis CI and our test scripts
+5. update deps for optimization testing because node 8 changed `GetOptimizationStatus` to use a bit mask instead of a single value
+6. add a `package-lock.json` because I'm using npm version 5
+
 ## 1.1.1 - 2017/04/30
 
 1. remembered to update the performance screenshot
