@@ -21,6 +21,8 @@ For this repo, run `npm run perf` to compare the performance of this implementat
 5. [flatten](https://www.npmjs.com/package/flatten)
 6. [just-flatten-it](https://www.npmjs.com/package/just-flatten-it)
 7. [reduce-flatten](https://www.npmjs.com/package/reduce-flatten).
+8. [array_flatten](https://www.npmjs.com/package/array_flatten).
+9. [npm-array-flatten](https://www.npmjs.com/package/npm-array-flatten).
 
 See screenshot of [performance results](#screenshot) below.
 
@@ -28,7 +30,7 @@ See screenshot of [performance results](#screenshot) below.
 ## Install
 
 ```sh
-npm install @flatten/array --save
+npm install --save @flatten/array
 ```
 
 
