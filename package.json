@@ -39,6 +39,7 @@
     "array-flatten": "^2.1.1",
     "array_flatten": "^1.0.0",
     "benchmarked": "^1.1.1",
+    "chalk": "^2.3.0",
     "coffee-script": "^1.12.7",
     "comma-number": "^2.0.0",
     "compute-flatten": "^1.0.0",
