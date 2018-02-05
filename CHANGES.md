@@ -1,3 +1,10 @@
+## 1.1.4 - 2018/02/05
+
+1. update deps
+2. update node version tests on Travis
+3. update mocha args (replace --compilers with --require)
+4. new performance run on node 8.9.4 with newest package versions
+
 ## 1.1.3 - 2017/05/31
 
 1. doh. forgot to add two new benchmark comparison implementations to the README list.
