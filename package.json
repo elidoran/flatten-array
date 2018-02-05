@@ -16,15 +16,15 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint --no-eslintrc --config build/eslint/eslint.js lib/index.js",
-    "test": "_mocha --compilers coffee:coffee-script/register -R spec --bail --check-leaks test/lib",
+    "test": "_mocha --require coffee-script/register --reporter spec --check-leaks test/lib/*.coffee",
     "test4": "nave use 4.8 npm test",
     "test6": "nave use 6.12 npm test",
     "test8": "nave use 8.9 npm test",
     "test9": "nave use 9.5 npm test",
     "test-all": "npm run test4 && npm run test6 && npm run test8 && npm run test9",
-    "coverage": "istanbul cover -x 'build/**' _mocha -- --compilers coffee:coffee-script/register -R spec test/lib",
+    "coverage": "istanbul cover -x 'build/**' _mocha -- --require coffee-script/register -R spec test/lib/*.coffee",
     "publish-coverage": "npm run coverage && cat coverage/lcov.info | coveralls",
-    "coverage-lcov": "istanbul cover -x 'build/**' _mocha --report lcovonly -- --compilers coffee:coffee-script/register -R spec test/lib",
+    "coverage-lcov": "istanbul cover -x 'build/**' _mocha --report lcovonly -- --require coffee-script/register -R spec test/lib/*.coffee",
     "coverage-clean": "rm -rf ./coverage",
     "perf": "node benchmark/index.js --turbo"
   },
