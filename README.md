@@ -100,7 +100,7 @@ buildSomething([ // top-most array is a great target
 
 Performance results screenshot shows this implementation is significantly faster than the others:
 
-![Show performance comparison with various inputs for this implementation, array-flatten, and flatten-array.](docs/performance.png)
+![Show performance comparison with various inputs for this implementation, array-flatten, and flatten-array.](https://raw.githubusercontent.com/elidoran/flatten-array/master/docs/performance.png)
 
 
 ## [MIT License](LICENSE)
