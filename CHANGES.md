@@ -1,3 +1,7 @@
+## 1.1.7 - 2018/07/15
+
+1. second attempt to make the performance.png image show on npmjs.com... by referencing it with an absolute path. The problem is it will always be the newest one, not matching the published version being viewed at npmjs.com. I could do the link to the exact version, but, I'd have to change that link every time I publish new performance results...
+
 ## 1.1.6 - 2018/07/15
 
 1. add `docs/performance.png` to the `package.json` `files` array so it will display at [https://www.npmjs.com/package/@flatten/array](https://www.npmjs.com/package/@flatten/array)
