@@ -1,3 +1,7 @@
+## 1.1.6 - 2018/07/15
+
+1. add `docs/performance.png` to the `package.json` `files` array so it will display at [https://www.npmjs.com/package/@flatten/array](https://www.npmjs.com/package/@flatten/array)
+
 ## 1.1.5 - 2018/07/15
 
 1. update deps and packages performance is compared to
