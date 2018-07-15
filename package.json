@@ -17,9 +17,9 @@
   "scripts": {
     "lint": "eslint --no-eslintrc --config build/eslint/eslint.js lib/index.js",
     "test": "_mocha --require coffee-script/register --reporter spec --check-leaks test/lib/*.coffee",
-    "test4": "nave use 4.8 npm test",
-    "test6": "nave use 6.12 npm test",
-    "test8": "nave use 8.9 npm test",
+    "test4": "nave use 4.9 npm test",
+    "test6": "nave use 6.14 npm test",
+    "test8": "nave use 8.11 npm test",
     "test10": "nave use 10.6 npm test",
     "test-all": "npm run test4 && npm run test6 && npm run test8 && npm run test10",
     "coverage": "istanbul cover -x 'build/**' _mocha -- --require coffee-script/register -R spec test/lib/*.coffee",
