@@ -1,6 +1,5 @@
 # @flatten/array
 [![Build Status](https://travis-ci.org/elidoran/flatten-array.svg?branch=master)](https://travis-ci.org/elidoran/flatten-array)
-[![Dependency Status](https://gemnasium.com/elidoran/flatten-array.png)](https://gemnasium.com/elidoran/flatten-array)
 [![npm version](https://badge.fury.io/js/%40flatten%2Farray.svg)](http://badge.fury.io/js/%40flatten%2Farray)
 [![Coverage Status](https://coveralls.io/repos/github/elidoran/flatten-array/badge.svg?branch=master)](https://coveralls.io/github/elidoran/flatten-array?branch=master)
 
