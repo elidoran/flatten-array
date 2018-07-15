@@ -1,3 +1,9 @@
+## 1.1.5 - 2018/07/15
+
+1. update deps and packages performance is compared to
+2. remove node 9, add node 10
+3. new performance run on node 10.6.0 with newest package versions
+
 ## 1.1.4 - 2018/02/05
 
 1. update deps
