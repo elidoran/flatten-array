@@ -9,8 +9,6 @@ Fastest implementation compared to several published packages and many unpublish
 
 The outermost array (the one provided to `flatten()`) is mutated. If you want to preserve the outermost array as well (inner arrays are always preserved) then wrap it in an array when supplying it: `flatten([array])`. Then the new array is the one which will be changed. And, the flatten operation will still be far faster than the other implementations.
 
-View [many implementation variations](https://github.com/elidoran/array-flatten/tree/add-more/benchmark/code/flatten) and use it to run benchmarks. This package's implementation is named `inplace2.js` there.
-
 For this repo, run `npm run perf` to compare the performance of this implementation to:
 
 1. [arr-flatten](https://www.npmjs.com/package/arr-flatten)
@@ -24,6 +22,8 @@ For this repo, run `npm run perf` to compare the performance of this implementat
 9. [npm-array-flatten](https://www.npmjs.com/package/npm-array-flatten).
 
 See screenshot of [performance results](#screenshot) below.
+
+Note, on a Mac I use the `renice` command to give the performance testing process high priority before answering the "run?" prompt.
 
 
 ## Install
