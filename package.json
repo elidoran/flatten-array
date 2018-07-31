@@ -21,7 +21,7 @@
     "test6": "nave use 6 npm test",
     "test8": "nave use 8 npm test",
     "test10": "nave use 10 npm test",
-    "test-all": "npm run test4 && npm run test6 && npm run test8 && npm run test10",
+    "tests": "npm run test4 && npm run test6 && npm run test8 && npm run test10",
     "coverage": "istanbul cover -x 'build/**' _mocha -- --require coffee-script/register -R spec test/lib/*.coffee",
     "publish-coverage": "npm run coverage && cat coverage/lcov.info | coveralls",
     "coverage-lcov": "istanbul cover -x 'build/**' _mocha --report lcovonly -- --require coffee-script/register -R spec test/lib/*.coffee",
