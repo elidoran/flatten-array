@@ -10,7 +10,10 @@
     "flatten",
     "flatten array",
     "array flatten",
-    "array"
+    "array",
+    "fast",
+    "fastest",
+    "best"
   ],
   "author": "Eli Doran <eli+npm@elidoran.com>",
   "license": "MIT",
