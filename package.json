@@ -44,7 +44,7 @@
     "comma-number": "^2.0.0",
     "compute-flatten": "^1.0.0",
     "coveralls": "^3.0.2",
-    "eslint": "^5.1.0",
+    "eslint": "^5.2.0",
     "flatten": "^1.0.2",
     "flatten-array": "^1.0.0",
     "has-flag": "^3.0.0",
