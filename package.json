@@ -29,7 +29,7 @@
     "publish-coverage": "npm run coverage && cat coverage/lcov.info | coveralls",
     "coverage-lcov": "istanbul cover -x 'build/**' _mocha --report lcovonly -- --require coffee-script/register -R spec test/lib/*.coffee",
     "coverage-clean": "rm -rf ./coverage",
-    "perf": "node benchmark/index.js --turbo"
+    "perf": "node benchmark/index.js"
   },
   "repository": {
     "type": "git",
