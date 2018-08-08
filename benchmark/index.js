@@ -23,7 +23,7 @@ ask.question('Begin benchmark? (y/N)  ', function(answer) {
 
   if ((answer != null) && (answer[0] === 'y' || answer[0] === 'Y')) {
 
-    return require('benchmarked')({
+    require('benchmarked')({
       cwd     : __dirname,
       fixtures: 'inputs/*.js',
       code    : 'implementations/*.js',
@@ -48,6 +48,6 @@ ask.question('Begin benchmark? (y/N)  ', function(answer) {
     }).run();
 
   } else {
-    return console.log('quitting');
+    console.log('quitting');
   }
 });
