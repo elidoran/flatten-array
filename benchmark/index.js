@@ -47,7 +47,10 @@ ask.question('Begin benchmark? (y/N)  ', function(answer) {
       }
     }).run();
 
-  } else {
+  }
+
+  else {
     console.log('quitting');
   }
+
 });
