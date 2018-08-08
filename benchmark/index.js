@@ -1,8 +1,8 @@
 
-const benchmarked = require('benchmarked')
-const format      = require('comma-number')
-const pad         = require('pad')
-const chalk       = require('chalk')
+const benchmark = require('benchmarked')
+const format    = require('comma-number')
+const pad       = require('pad')
+const chalk     = require('chalk')
 
 const bold  = chalk.bold
 const dim   = chalk.dim
@@ -22,7 +22,7 @@ ask.question('Begin benchmark? (y/N)  ', function(answer) {
 
   if ((answer != null) && (answer[0] === 'y' || answer[0] === 'Y')) {
 
-    require('benchmarked')({
+    benchmark({
       cwd     : __dirname,
       fixtures: 'inputs/*.js',
       code    : 'implementations/*.js',
