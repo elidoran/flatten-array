@@ -1,15 +1,14 @@
-var benchmarked, format, pad, chalk, bold, dim, grey, ask
 
-benchmarked = require('benchmarked')
-format      = require('comma-number')
-pad         = require('pad')
-chalk       = require('chalk')
+const benchmarked = require('benchmarked')
+const format      = require('comma-number')
+const pad         = require('pad')
+const chalk       = require('chalk')
 
-bold  = chalk.bold
-dim   = chalk.dim
-grey  = chalk.grey
+const bold  = chalk.bold
+const dim   = chalk.dim
+const grey  = chalk.grey
 
-ask = require('readline').createInterface({
+const ask = require('readline').createInterface({
   input : process.stdin,
   output: process.stdout
 })
@@ -29,14 +28,13 @@ ask.question('Begin benchmark? (y/N)  ', function(answer) {
       code    : 'implementations/*.js',
 
       format  : function(bm) {
-        var ess, name, ops, rme, runs, size
 
-        name = bold(pad(18, bm.name))
-        ops  = pad(10, format(bm.hz.toFixed(bm.hz < 100 ? 2 : 0)))
-        rme  = '\xb1' + bm.stats.rme.toFixed(2).slice(0, 4) + '%'
-        size = pad(2, bm.stats.sample.length)
-        ess  = bm.stats.sample.length === 1 ? ' ' : 's'
-        runs = grey('run' + ess + ' sampled)')
+        const name = bold(pad(18, bm.name))
+        const ops  = pad(10, format(bm.hz.toFixed(bm.hz < 100 ? 2 : 0)))
+        const rme  = '\xb1' + bm.stats.rme.toFixed(2).slice(0, 4) + '%'
+        const size = pad(2, bm.stats.sample.length)
+        const ess  = bm.stats.sample.length === 1 ? ' ' : 's'
+        const runs = grey('run' + ess + ' sampled)')
 
         return name + ' ' + (dim('x')) + ' ' + ops + ' ' + (grey('ops/sec')) +
           ' ' + rme + ' ' + (grey('(')) + size + ' ' + runs
