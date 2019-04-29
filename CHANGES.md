@@ -1,3 +1,14 @@
+## 1.1.8 - 2019/04/19
+
+1. updated deps
+2. added node 12 to Travis CI and testing scripts
+3. eliminated lcov only coverage (easier to maintain one)
+4. ran a new performance test and updated the screenshot of its results
+5. remove the minor version from test scripts so they use latest minor version
+6. renamed test script which runs all of them from test-all to tests.
+7. update package keywords
+8. remove semi-colons
+
 ## 1.1.7 - 2018/07/15
 
 1. second attempt to make the performance.png image show on npmjs.com... by referencing it with an absolute path. The problem is it will always be the newest one, not matching the published version being viewed at npmjs.com. I could do the link to the exact version, but, I'd have to change that link every time I publish new performance results...
