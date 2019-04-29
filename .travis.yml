@@ -11,8 +11,9 @@ node_js:
   - "6"
   - "8"
   - "10"
+  - "12"
 
-script: npm run coverage-lcov
+script: npm run coverage
 
 after_success:
  - 'cat ./coverage/lcov.info | ./node_modules/.bin/coveralls'
